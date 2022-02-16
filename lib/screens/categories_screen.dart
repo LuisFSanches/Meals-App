@@ -9,11 +9,7 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Center(child: Text('Vamos Cozinhar?')),
-      ),
-      body: Padding(
+    return Padding(
         padding: const EdgeInsets.all(15),
         child: GridView(
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
@@ -27,7 +23,7 @@ class CategoriesScreen extends StatelessWidget {
           }).toList(),
     
         ),
-      ),
-    );
+      );
+    
   }
 }
