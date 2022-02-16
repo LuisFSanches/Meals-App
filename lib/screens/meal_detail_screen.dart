@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../models/Meal.dart';
+import '../models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
   
@@ -77,16 +77,22 @@ class MealDetailScreen extends StatelessWidget {
                          ),
                          title: Text(meal.steps[index]),
                        ),
-                     
                      ],
                    );
                  }
-                 )
-             )
-            
-          ],
+                )
+              )
+            ],
           ),
-      )
+        ),
+        floatingActionButton:FloatingActionButton(
+          child: Icon(Icons.star),
+          onPressed: (){
+            Navigator.of(context).pop(meal.title);
+          },
+          backgroundColor: Colors.amber,
+        ) ,
+
       
     );
   }
