@@ -6,8 +6,6 @@ import '../utils/app_routes.dart';
 
 class MealItem extends StatelessWidget {
 
- 
-
   final Meal meal;
   
   MealItem(this.meal);
